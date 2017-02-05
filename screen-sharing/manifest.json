@@ -1,0 +1,23 @@
+{
+
+  "background": {
+     "scripts": [ "background.js" ]
+  },
+  "content_scripts": [  {
+      "js": ["content.js"],
+      "matches": ["https://localhost/*", "https://*.collaborate.org/*" ]
+    }],
+  "description": "Enables Screen Sharing on Firefox",
+
+  "icons": {
+  },
+
+  "manifest_version": 2,
+  "name": "screen-sharing",
+  "version": "0.0.1",
+
+  "author": "Julio Vidal <julio@intelesense.net >",
+
+  "permissions": [ "desktopCapture" ]
+
+}
